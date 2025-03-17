@@ -26,15 +26,224 @@ p {
 }
 
 /*common*/
-.container {
-  
+.container {display: flex;
   max-width: 1158px;
-  padding: 0 15px;
+  
   margin: 0 auto;
 }
 
+
+.column-mini {max-width: 386px;
+  background-color: #2b2c4e;
+  color: bisque;
+  justify-content: center;
+  padding: 20px 30px;
+  line-height: 1.5;
+}
+.foto{border-radius: 10px;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.text-contact {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  position: relative;
+  letter-spacing: 0.2em;
+}
+.text-contact::before {
+  content: '';
+  /* Створюємо псевдоелемент */
+  position: absolute;
+
+  width: 100%;
+  /* Ширина лінії більша за ширину тексту */
+  height: 2px;
+  bottom: 0;
+  /* Лінія буде під текстом */
+  background-color: #f7f6f6;
+  /* Колір лінії */
+}
+
+
+
+.con-item {
+  padding-top: 10px;
+}
+
+
+
+
+
+.text-education {
+  padding-top: 20px;
+  padding-bottom: 10px;
+letter-spacing: 0.2em;
+  position: relative;
+
+  /* Відстань між лінією і текстом */
+}
+
+.text-education::before {
+  content: '';
+  /* Створюємо псевдоелемент */
+  position: absolute;
+
+  width: 100%;
+  /* Ширина лінії більша за ширину тексту */
+  height: 2px;
+  bottom: 0;
+  /* Лінія буде під текстом */
+  background-color: #f7f6f6;
+  /* Колір лінії */
+}
+
+.text-years-last {
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.text-educational-institutions {
+  padding-bottom: 5px;
+}
+.jurisprudencia {
+  padding-bottom: 10px;
+  list-style: outside;
+}
+
+.text-years-medium {
+  padding-bottom: 10px;
+}
+
+.text-years-school {
+  padding-bottom: 10px;
+}
+
+.school {
+  padding-bottom: 20px;
+}
+
+.list-habilidades {
+  list-style: outside;
+}
+.habilidades {
+  position: relative;
+  padding-bottom: 10px;
+  letter-spacing: 0.2em;
+}
+.habilidades::before {
+  content: '';
+  /* Створюємо псевдоелемент */
+  position: absolute;
+
+  width: 100%;
+  /* Ширина лінії більша за ширину тексту */
+  height: 2px;
+  bottom: 0;
+  /* Лінія буде під текстом */
+  background-color: #f7f6f6;
+  /* Колір лінії */
+}
+
+.punt {
+  padding-top: 20px;
+}
+
+.languages {
+  list-style: outside;
+}
+.idiomas{position: relative;
+  padding-top: 20px;
+padding-bottom: 10px;
+letter-spacing: 0.2em;}
+.idiomas::before {
+  content: '';
+  /* Створюємо псевдоелемент */
+  position: absolute;
+
+  width: 100%;
+  /* Ширина лінії більша за ширину тексту */
+  height: 2px;
+  bottom: 0;
+  /* Лінія буде під текстом */
+  background-color: #f7f6f6;
+  /* Колір лінії */
+}
+.ua {
+  padding-top: 20px;
+}
+/* column-big */
+.column-big {
+    min-width: 790px;
+    background-color: #f1f1f6;
+    color:#2b2c4e;
+    
+   
+    line-height: 1.5;
+}
+.title-name{padding-top: 80px;
+position: relative;}
+.surname{padding-bottom: 20px;}
+
+.title-name::before {
+  content: '';
+  /* Створюємо псевдоелемент */
+  position: absolute;
+  margin-left: 30px;
+  width: 92%;
+  /* Ширина лінії більша за ширину тексту */
+  height: 3px;
+  bottom: 0;
+  /* Лінія буде під текстом */
+  background-color:#2b2c4e;
+  /* Колір лінії */
+}
+.container-text{max-width: 725px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.perfil{position: relative;
+
+letter-spacing: 0.07em;}
+
+.perfil::before {
+  content: '';
+  /* Створюємо псевдоелемент */
+  position: absolute;
+  
+  width: 725px;
+  /* Ширина лінії більша за ширину тексту */
+  height: 1px;
+  bottom: 0;
+  /* Лінія буде під текстом */
+  background-color: #2b2c4e;
+  /* Колір лінії */
+}
+.laboral{position: relative;
+
+  letter-spacing: 0.07em;}
+.laboral::before {
+  content: '';
+  /* Створюємо псевдоелемент */
+  position: absolute;
+
+  width: 725px;
+  /* Ширина лінії більша за ширину тексту */
+  height: 2px;
+  bottom: 0;
+  /* Лінія буде під текстом */
+  background-color: #2b2c4e;
+  /* Колір лінії */
+}
+.text{padding-top: 10px;}
+
+.list-work {list-style: outside;
+}
+
 /*header*/
-.hero-container {
+/* .hero-container {
   display: flex;
   align-items: center;
 }
@@ -144,7 +353,7 @@ p {
   color: #404bbf;
 }
 /*section*/
-.section {
+/* .section {
   padding: 120px 0;
 }
 .sec {
@@ -200,7 +409,7 @@ p {
   background-color: #404bbf;
 }
 /*section2 */
-.sec-futures {
+/* .sec-futures {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -260,7 +469,7 @@ p {
   gap: 8px;
 }
 /*section 3*/
-.sec-our {
+/* .sec-our {
   padding: 120px 0;
   background-color: #f4f4fd;
 }
@@ -462,8 +671,8 @@ footer .span-logo {
   color: #ffffff;
   margin-bottom: 16px;
 }
-.social-item {
-  display: flex;
+.social-item { */
+/* display: flex;
   gap: 16px;
 }
 .social-li {
@@ -485,4 +694,4 @@ footer .span-logo {
 .link-footer-icons:hover,
 .link-footer-icons:focus {
   background-color: #31d0aa;
-}
+}  */
